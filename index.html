@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="https://www.svgrepo.com/show/67282/letter-s-between-straight-parenthesis-symbol.svg" type="image/icon type">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <meta charset="utf-8" />
+    <title>Semhax</title>
+  </head>
+  <body>
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script>
+      function myFunction() {
+        navigator.clipboard.writeText("Semhax#1296");
+        alert("Copied the text: Semhax#1296");
+      }
+    </script>
+    <div class="container">
+      <section id="title">
+        <div class="greet">
+          <h1>HI!</h1>
+          <div class="title-txt"><h1>Semhax</h1> <i>here.</i></div>
+        </div>
+        <ul class="skills">
+          <li>developer</li>
+          <li>designer</li>
+          <li>beginner</li>
+        </ul>
+        <a href="#interests" id="btn-a"><button id="interest-btn" >My Interests</button></a>
+      </section>
+      <div class="space"></div>
+      <section id="interests">
+        <h1>->Interests<-</h1>
+        <p>Programs & languages I’m interested in.</p>
+        <h3>-> Programs <-</h3>
+        <div class="box-container">
+          <div id="vscode" class="box">
+            <p>70%</p>
+            <a href="https://code.visualstudio.com/" target="_blank"><iconify-icon icon="vscode-icons:file-type-vscode" width="50px" height="50px"></iconify-icon></a>
+            <p>vscode</p>
+            <div id="box-persent"></div>
+          </div>
+          <div id="unity" class="box">
+            <p>55%</p>
+            <a href="https://unity.com/" target="_blank"><iconify-icon icon="bi:unity" width="50px" height="50px"></iconify-icon></a>
+            <p>unity</p>
+            <div id="box-persent"></div>
+          </div>
+          <div id="figma" class="box">
+            <p>30%</p>
+            <a href="https://www.figma.com/" target="_blank"><iconify-icon icon="logos:figma" width="50px" height="50px"></iconify-icon></a>
+            <p>figma</p>
+            <div id="box-persent"></div>
+          </div>
+        </div>
+        <h3>-> Languages <-</h3>
+        <div class="box-container">
+          <div id="html" class="box">
+            <p>90%</p>
+            <a href="https://www.w3schools.com/html/" target="_blank"><iconify-icon icon="vscode-icons:file-type-html" width="50px" height="50px"></iconify-icon></a>
+            <p>html</p>
+            <div id="box-persent"></div>
+          </div>
+          <div id="js" class="box">
+            <p>65%</p>
+            <a href="https://www.w3schools.com/js/" target="_blank"><iconify-icon icon="vscode-icons:file-type-js-official" width="50px" height="50px"></iconify-icon></a>
+            <p>js</p>
+            <div id="box-persent"></div>
+          </div>
+          <div id="processing" class="box">
+            <p>55%</p>
+            <a href="https://processing.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Processing_2021_logo.svg" alt="procesing logo" width="50px" height="50px"></img></a>
+            <p>processing</p>
+            <div id="box-persent"></div>
+          </div>
+          <div id="css" class="box">
+            <p>45%</p>
+            <a href="https://www.w3schools.com/css/" target="_blank"><iconify-icon icon="vscode-icons:file-type-css" style="color: #e34f26;" width="50px" height="50px"></iconify-icon></a>
+            <p>css</p>
+            <div id="box-persent"></div>
+          </div>
+          <div id="p5-js" class="box">
+            <p>45%</p>
+            <a href="https://p5js.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/P5.js_icon.svg" width="50px" height="50px"></img></a>
+            <p>p5.js</p>
+            <div id="box-persent">
+            </div>
+          </div>
+          <div id="csharp" class="box">
+            <p>40%</p>
+            <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank"><iconify-icon icon="vscode-icons:file-type-csharp2" width="50px" height="50px"></iconify-icon></a>
+            <p>c#</p>
+            <div id="box-persent"></div>
+          </div>
+          <div id="rust" class="box">
+            <p>15%</p>
+            <a href="https://www.rust-lang.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Original_Ferris.svg" width="50px" height="50px"></-icon></a>
+            <p>rust</p>
+            <div id="box-persent"></div>
+          </div>
+        </div>
+      </section>
+      <div class="space"></div>
+      <section class="socials">
+        <h1>-> Socials <-</h1>
+        <p>Places where you can contact me from.</p>
+        <div class="social-container">
+          <a onclick="myFunction()"><iconify-icon icon="akar-icons:discord-fill" width="100px" height="100px" class="soc-icons"></iconify-icon></a>
+          <a href="https://github.com/Semhex" target="_blank"><iconify-icon icon="akar-icons:github-fill" width="100px" height="100px" class="soc-icons"></iconify-icon></a>
+          <a href="https://www.reddit.com/user/Semhex0" target="_blank"><iconify-icon icon="akar-icons:reddit-fill" width="100px" height="100px" class="soc-icons"></iconify-icon></a>
+        </div>
+      </section>
+      <footer>
+        <p>This website was built by me using HTML, CSS & p5.js</p>
+        <p>You can find the source code <a href="https://github.com/Semhex" target="_blank">here</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
