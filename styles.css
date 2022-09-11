@@ -1,17 +1,7 @@
 :root {
   --maincolor: #3B3B98;
-  --pcolor: #505050;
+  --pcolor: #aaaaaa;
   --normalcolor: #ffffff;
-  --vscodecolor: #22A6F1;
-  --unitycolor: #B1B1B1;
-  --figmacolor: #A259FF;
-  --htmlcolor: #E34F26;
-  --jscolor: #F7DF1E;
-  --procesingcolor: #1F34AB;
-  --csscolor: #2965F1;
-  --p5-jscolor: #ED225D;
-  --csharpcolor: #1c7215;
-  --rustcolor: #F66C00;
   font-family: 'Roboto Mono';
 }
 
@@ -313,8 +303,8 @@ h1, h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
-  padding-bottom: 300px;
+  padding-top: 10px;
+  padding-bottom: 270px;
 }
 
 footer {
@@ -323,14 +313,109 @@ footer {
 }
 
 #btn-a {
-  color:#3B3B98;
+  color: var(--maincolor);
   margin: 0 auto;
 }
+
 
 a:not(:last-of-type) {
   margin-right: 78px;
 }
 
 .soc-icons {
-  color:#3B3B98;
+  color:var(--maincolor);
+}
+
+a {
+  color: var(--maincolor);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 20%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin-right: 78px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #000000;
+  color: var(--maincolor);
+  text-align: center;
+  border: solid 2px var(--maincolor);
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: -70%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--maincolor) transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.titles{
+  font-size: 50px;
+}
+
+.co-titles {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 950px) {
+  .box-container {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .box-container {
+    width: 300px;
+  }
+
+  .social-container {
+    flex-direction: column;
+  }
+  .soc-icons {
+    margin: 0 auto;
+  } 
+}
+
+@media screen and (min-width: 1400px) {
+  .box-container {
+    width: 1200px;
+  }
+
+  p, h1, h3 {
+    font-size: larger;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .box-container {
+    width: 1700px;
+  }
 }

@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" href="https://www.svgrepo.com/show/67282/letter-s-between-straight-parenthesis-symbol.svg" type="image/icon type">
     <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
     <title>Semhax</title>
   </head>
@@ -16,8 +17,15 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <script>
       function myFunction() {
-        navigator.clipboard.writeText("Semhax#1296");
-        alert("Copied the text: Semhax#1296");
+      navigator.clipboard.writeText("Semhax#1296");
+      
+      var tooltip = document.getElementById("myTooltip");
+      tooltip.innerHTML = "Copied: Semhax#1296";
+      }     
+
+      function outFunc() {
+        var tooltip = document.getElementById("myTooltip");
+        tooltip.innerHTML = "Copy to clipboard";
       }
     </script>
     <div class="container">
@@ -35,9 +43,9 @@
       </section>
       <div class="space"></div>
       <section id="interests">
-        <h1>->Interests<-</h1>
+        <h1 class="titles">->Interests<-</h1>
         <p>Programs & languages I’m interested in.</p>
-        <h3>-> Programs <-</h3>
+        <h3 class="co-titles">-> Programs <-</h3>
         <div class="box-container">
           <div id="vscode" class="box">
             <p>70%</p>
@@ -58,7 +66,7 @@
             <div id="box-persent"></div>
           </div>
         </div>
-        <h3>-> Languages <-</h3>
+        <h3 class="co-titles">-> Languages <-</h3>
         <div class="box-container">
           <div id="html" class="box">
             <p>90%</p>
@@ -107,17 +115,21 @@
       </section>
       <div class="space"></div>
       <section class="socials">
-        <h1>-> Socials <-</h1>
+        <h1 class="titles">-> Socials <-</h1>
         <p>Places where you can contact me from.</p>
         <div class="social-container">
-          <a onclick="myFunction()"><iconify-icon icon="akar-icons:discord-fill" width="100px" height="100px" class="soc-icons"></iconify-icon></a>
+          <div class="tooltip">
+            <a onclick="myFunction()" id="dc-icon"><iconify-icon icon="akar-icons:discord-fill" width="100px" height="100px" class="soc-icons"></iconify-icon>
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            </a>
+          </div>
           <a href="https://github.com/Semhex" target="_blank"><iconify-icon icon="akar-icons:github-fill" width="100px" height="100px" class="soc-icons"></iconify-icon></a>
           <a href="https://www.reddit.com/user/Semhex0" target="_blank"><iconify-icon icon="akar-icons:reddit-fill" width="100px" height="100px" class="soc-icons"></iconify-icon></a>
         </div>
       </section>
       <footer>
         <p>This website was built by me using HTML, CSS & p5.js</p>
-        <p>You can find the source code <a href="https://github.com/Semhex" target="_blank">here</a></p>
+        <p>You can find the source code <a href="https://github.com/Semhex" target="_blank"><iconify-icon icon="akar-icons:github-fill" width="20px" height="20px" class="soc-icons"></iconify-icon> here</a>.</p>
       </footer>
     </div>
   </body>
